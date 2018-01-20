@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>hw</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="main">
+      <div id="container">
+        <div id="content" role="main">
+
+          <header>
+            <div class="logo">
+              <img width="300" src="EPAM_logo.svg" />
+            </div>
+            
+            <div class="links">
+              <a href="#html">HTML</a>
+              <a href="#list">List</a>
+              <a href="#table">Table</a>
+              <a href="#formats">Text formats</a>
+              <a href="#blockquote">Blockquotes</a>
+            </div>
+            <hr />
+          </header>
+
+          <section id="html">
+            <h1>
+              <strong>
+                <big>
+                  HTML Elements
+                </big>
+              </strong>
+            </h1>
+            <hr />
+          </section>
+
+          <section id="list">
+
+            <h2>
+              Order List
+            </h2>
+
+            <!--unordered list-->
+            <ul type="square">
+              <li>
+                <h1>
+                  Heading 1
+                </h1>
+                <ul type="square">
+                  <li>
+                    <h2>
+                      Heading 2
+                    </h2>
+                    <ul type="square">
+                      <li>
+                        <h3>
+                          Heading 3
+                        </h3>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            
+            <!--ordered list-->
+            <ol>
+              <li>
+                <h4>
+                  Heading 4
+                </h4>
+                <ol type="square">
+                  <li>
+                    <h5>
+                      Heading 5
+                    </h5>
+                    <ol type="square">
+                      <li>
+                        <h6>
+                          Heading 6
+                        </h6>
+                      </li>
+                    </ol>
+                  </li>
+                </ol>
+              </li>
+            </ol>
+
+            <!--definition list-->
+            <h3>
+              Definition list
+            </h3>
+            <dl>
+              <dt>defines terms 1</dt>
+                <dd>description 1</dd>
+
+              <dt>defines terms 2</dt>
+                <dd>description 2</dd>
+            </dl>
+
+            <!--details-->
+            <h2>
+              Details
+            </h2>
+            <details>
+              <summary>Even more details.</summary>
+              <p> Here are even more details about the details</p>
+            </details>
+
+            <hr />
+          </section>
+
+          <!--Table-->
+          <section id="table">
+
+            <h2>
+              Table
+            </h2>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Elements</th>
+                  <th>Elements</th>
+                  <th>Elements</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>strong</strong></td>
+                  <td>H<sub>2</sub>O</td>
+                  <td><a href="#">Test link</a></td>
+                </tr>
+                <tr>
+                  <td><italic>italic</italic></td>
+                  <td><u>Underline</u></td>
+                  <td><strike>Delete</strike></td>
+                </tr>
+                <tr>
+                  <td><abbr title="Some Long Name of Abbreviation">Abbreviation</td>
+                  <td>5<sup>3</sup>=125</td>
+                  <td><ins>inserted</ins></td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </section>
+
+          <!--Text formats-->
+
+          <section id="formats">
+            
+            <h2>
+              Text Formats
+            </h2>
+
+            <h4>Article Text</h4>
+            <article>
+              <h2>Article Title</h2>
+              <small>Article Description</small>
+            </article>
+            <br />
+
+            <h4>Preformatted Text</h4>
+            <b>Text</b>
+            <pre>     in a pre element <br />
+                      is displayed in a fixed-width <br />
+            font, and it preserves <br />
+            both              spaces and <br />
+                 line breaks
+            </pre>
+
+            <h4>Code</h4>
+            <code><pre>
+              .wrapper { <br />
+                display: grid; <br />
+                grid-tamplate-colums: repeat(3, 1fr); <br />
+                grid-gap: 10px; <br />
+                grid-auto-rows: minmax(100px, auto); <br />
+            }
+            </pre></code>
+             <hr />
+
+          </section>
+
+          <!--Blockquotes-->
+
+          <section id="blockquote">
+
+            <h2>
+              Blockquote
+            </h2>
+
+            <p>
+              Let's keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.
+            </p>
+            <blockquote>
+              Technology is nothing. What's important is that you have a faith in people, that they're basically good and smart, and if you give them tools, they'll do wonderful things with them <br />
+              <a href="#">Steve Jobs</a>
+            </blockquote>
+            
+          </section>
+          
+
+          <footer align="center">
+            Copyright Epam Systems
+          </footer>
+
+      
+          
+          
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
