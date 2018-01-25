@@ -146,6 +146,9 @@ section:nth-child(2) p {
 
 				/*9 we are section*/
 
+section:nth-child(3) a {
+    color: #000;
+}
 section:nth-child(3) a:visited {
 	color: silver;
 }
