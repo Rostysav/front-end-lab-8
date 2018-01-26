@@ -213,11 +213,11 @@ another solution method
 
 @media (max-width: 1140px), (max-height: 835px){
 	.tm-sidebar {
-    width: 100%;
-    display: flex;
-    top: 0;
-    left: 0;
-    z-index: 999;
+		 width: 100%;
+		 display: flex;
+		 top: 0;
+		 left: 0;
+		 z-index: 999;
 	}
 	.tm-sidebar .tm-main-nav {
 		width: 100%;
@@ -225,8 +225,8 @@ another solution method
 	}
 	.tm-main-nav ul {
 		display: flex;
-    justify-content: space-between;
-    border-bottom: 2px solid #a09898;
+	    	justify-content: space-between;
+		border-bottom: 2px solid #a09898;
 
 	}
 	.tm-main-nav .tm-nav-item {
