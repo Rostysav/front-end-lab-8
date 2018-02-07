@@ -1,5 +1,5 @@
 
-		/*Reset style*/
+/*Reset style*/
 
 * {
 	margin: 0;
@@ -16,33 +16,33 @@
 }
 
 
-		/*Header start*/
+/*Header start*/
 header {
 	background: #fff;
 	padding: 15px 0;
 }
 header .logo {
-  margin-right: 100px;
-  overflow: hidden;
+	margin-right: 100px;
+	overflow: hidden;
 }
 header .logo img {
 	max-width: 100%;
-  width: auto;
-  height: auto;
+	width: auto;
+	height: auto;
 }
 header nav {
 	margin-bottom: 15px;
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 header nav a {
 	color: #333;
 	text-decoration: none;
 	text-transform: uppercase;
-  font-weight: 800;
-  margin-right: 15px;
-  transition: color .3s ease;
-  font-size: 1em;
+	font-weight: 800;
+	margin-right: 15px;
+	transition: color .3s ease;
+	font-size: 1em;
 }
 header nav .active {
 	color: #39c2d7;
@@ -52,21 +52,24 @@ header nav a:hover {
 	color: #39c2d7;
 }
 
-		/*Header tabler*/
+/*Header tabler*/
 
 @media screen and (min-width: 576px) and (max-width: 900px) {
 	header .container {
-    flex-direction: column;
-    align-items: center;
+		flex-direction: column;
+		align-items: center;
 	}
 	header .logo {
 		margin-right: 0;
-    margin-bottom: 15px;
+		margin-bottom: 15px;
 	}
 }
-		/*Header mobile*/
+/*Header mobile*/
 
 @media screen and (max-width: 575px) {
+	header {
+		padding-bottom: 0;
+	}
 	header .container {
 		flex-direction: column;
 		padding: 0;
@@ -79,12 +82,13 @@ header nav a:hover {
 		flex-direction: column;
 		align-items: flex-start;
 		overflow: hidden;
+		margin-bottom: 0;
 	}
 	header nav a {
-    width: 100%;
-    padding: 10px 15px;
-    background: #ccc;
-    border-bottom: 1px solid #333;
+		width: 100%;
+		padding: 10px 15px;
+		background: #ccc;
+		border-bottom: 1px solid #333;
 	}
 	header nav a:first-child {
 		border-top: 1px solid #333;
@@ -99,7 +103,7 @@ header nav a:hover {
 
 
 
-			/*Main block*/
+/*Main block*/
 .main {
 	width: 100%;
 	background: url('../img/banner.jpg') no-repeat;
@@ -109,8 +113,8 @@ header nav a:hover {
 }
 .main .container {
 	display: flex;
-  align-items: center;
-  height: 100%
+	align-items: center;
+	height: 100%
 }
 .main .main-text {
 	color: #fff;
@@ -118,18 +122,18 @@ header nav a:hover {
 	width: 300px;
 }
 .main h2 {
-  line-height: 1.4em
+	line-height: 1.4em
 }
 
-			/*Main tablet*/
+/*Main tablet*/
 
 @media screen and (min-width: 576px) and (max-width: 900px) {
 	.main {
 		height: 500px;
 	}
 	.main .container {
-    justify-content: center;
-    align-items: flex-start;
+		justify-content: center;
+		align-items: flex-start;
 	}
 	.main .main-text {
 		width: 500px;
@@ -142,15 +146,15 @@ header nav a:hover {
 	}
 }
 
-				/*Main mobile*/
+/*Main mobile*/
 
 @media screen and (max-width: 575px) {
 	.main {
 		height: 250px;
 	}
 	.main .container {
-    justify-content: center;
-    align-items: flex-end;
+		justify-content: center;
+		align-items: flex-end;
 	}
 	.main .main-text {
 		width: 100%;
@@ -164,21 +168,21 @@ header nav a:hover {
 }
 
 
-				/*News*/
+/*News*/
 
 .news {
 	padding: 30px 0;
 }
 .news .news-wrap {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+	width: 100%;
 }
 .news .news-item {
 	padding: 15px 15px 25px;
-  background: #ccc;
-  transition: .3s;
+	background: #ccc;
+	transition: .3s;
 }
 .news .news-item a {
 	color: #000;
@@ -196,34 +200,34 @@ header nav a:hover {
 	font-size: 1.1em;
 }
 
-		/*News desktop*/
+/*News desktop*/
 
 @media screen and (max-width: 900px) {
 	.news {
 		padding: 15px 0;
 	}
 	.news .news-wrap {
-	  grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
 	}
 	.news .news-item img {
-    width: 80%;
-    margin-left: 10%;
+		width: 80%;
+		margin-left: 10%;
 	}
 	.news .news-item h4 {
 		margin: 5px 0;
 	}
 }
 
-		/*News mobile*/
+/*News mobile*/
 
 @media screen and (max-width: 575px) {
 	.news .news-wrap {
-	  grid-template-columns: 1fr;
+		grid-template-columns: 1fr;
 	}
 }
 
 
-			/*Footer*/
+/*Footer*/
 
 footer {
 	width: 100%;
@@ -249,12 +253,12 @@ footer a:hover {
 	text-decoration: none;
 }
 
-		/*Footer desktop*/
+/*Footer desktop*/
 
 @media screen and (max-width: 900px) {
 	footer .footer-content {
 		align-items: center;
-    flex-direction: column;
+		flex-direction: column;
 	}
 	footer ul {
 		margin-bottom: 15px;
@@ -264,13 +268,13 @@ footer a:hover {
 	}	
 }
 
-		/*Footer mobile*/
+/*Footer mobile*/
 
 @media screen and (max-width: 575px) {
 	footer ul {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 	footer ul li+li {
 		margin-top: 5px;
