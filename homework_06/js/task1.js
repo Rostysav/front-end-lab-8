@@ -1,12 +1,15 @@
 window.onload = function() {
-	var x = +prompt('Enter value');
-	var y = +prompt('Enter value');
-	var z = +prompt('Enter value');
-	var p=(x+y+z)/2;
-	var aria = Math.sqrt(p*(p-x)*(p-y)*(p-z));
-	var xSquare = x * x;
-	var ySquare = y * y;
-	var zSquare = z * z;
+	var x = prompt('Enter value');
+	var y = prompt('Enter value');
+	var z = prompt('Enter value');
+	var numX = parseInt(x);
+	var numY = parseInt(y);
+	var numZ = parseInt(z);
+	var p=(numX+numY+numZ)/2;
+	var aria = Math.sqrt(p*(p-numX)*(p-numY)*(p-z));
+	var xSquare = numX * numX;
+	var ySquare = numY * numY;
+	var zSquare = numZ * numZ;
 	var firstSide = xSquare + ySquare;
 	var secondSide = xSquare + zSquare;
 	var thirdSide = ySquare + zSquare;
@@ -24,11 +27,11 @@ window.onload = function() {
 
 
 	function typeOfTriangle() {
-		if (x == y && x == z && y == z) {
+		if (numX == numY && numX == numZ && numY == numZ) {
 			console.log('Type of triangles: Equilateral');
-		} else if (x == y && x != z || x == z && x != y || y == z && y != x) {
+		} else if (numX == numY && numX != numZ || numX == z && numX != numY || numY == numZ && numY != numX) {
 			console.log('Type of triangles: Isosceles');
-		} else if (x != y != z) {
+		} else if (numX != numY != numZ) {
 			console.log('Type of triangles: Scalene');
 		}
 		if ((xSquare == thirdSide) || (ySquare == secondSide) || (zSquare == firstSide)) {
