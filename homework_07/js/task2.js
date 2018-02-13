@@ -61,6 +61,7 @@ if( play == true ) {
 						game = true;
 						prise = prise * 3;
 						maxChooseNumber = maxChooseNumber * 2;
+						randomNumber = Math.floor(Math.random() * 10 );
 					} else {
 						console.log(' Thank you for game');
 						game = false;
