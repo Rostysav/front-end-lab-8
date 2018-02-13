@@ -1,3 +1,11 @@
+var play = confirm('Do you want to play game ?');
+var randomNumber = Math.floor(Math.random() * 5 );
+var game = true;
+var x;
+var prise = 10;
+var maxChooseNumber = 5;
+var maxAttachment = 3;
+
 if( play == true ) {
 	while(game) {
 		var randomNumber = Math.floor(Math.random() * 5 );
