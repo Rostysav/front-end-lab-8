@@ -3,6 +3,7 @@ var randomNumber = Math.floor(Math.random() * 5 );
 var x;
 var prise = 10;
 var attachment = 3;
+var pattern = /^[\s]+$/
 
 
 function chekNumber() {
@@ -19,7 +20,7 @@ chekNumber();
 
 function firstChek() {
 	x  = prompt(`Choose number from 0 to 5 \nAttachment left: ${attachment} \nPrise: ${prise}$`);
-	if ( (x != +x) || (x < 0) || (x > 5) || x.length == 0 ) {
+	if ( (x != +x) || (x < 0) || (x > 5) || x.length == 0 || pattern.test(x)) {
 		alert('Please enter number from 0 to 5');
 		firstChek();
 	} else if (x != randomNumber) {
@@ -32,7 +33,7 @@ function firstChek() {
 
 function secondChek() {
 	x  = prompt(`Choose number from 0 to 5 \nAttachment left: ${attachment - 1} \nPrise: ${prise / 2}$`);
-	if ( (x != +x) || (x < 0) || (x > 5) || x.length == 0 ) {
+	if ( (x != +x) || (x < 0) || (x > 5) || x.length == 0 || pattern.test(x) ) {
 		alert('Please enter number from 0 to 5');
 		secondChek();
 	}
@@ -46,7 +47,7 @@ function secondChek() {
 
 function thirdChek() {
 	x  = prompt(`Choose number from 0 to 5 \nAttachment left: ${attachment - 2} \nPrise: ${prise / prise}$`);
-	if ( (x != +x) || (x < 0) || (x > 5) || x.length == 0 ) {
+	if ( (x != +x) || (x < 0) || (x > 5) || x.length == 0 || pattern.test(x)) {
 		alert('Please enter number from 0 to 5');
 		thirdChek();
 	}
@@ -63,18 +64,23 @@ function thirdChek() {
 
 console.log(randomNumber);
 
+
+
+
+
 // var play = confirm('Do you want to play game ?');
 // var randomNumber = Math.floor(Math.random() * 5 );
 // var x;
 // var prise = 10;
 // var i = 3;
+// var pattern = /^[\s]+$/
 
 // if ( play == false) {
 // 	console.log('You did not become a millionaire');
 // } else {
 // 	x = prompt(`Choose number from 0 to 5 \nAttachment left: ${i} \nPrise: ${prise} `);
 	
-// 	if ( x < 0 || x > 5 || x.length == 0 || x != +x ) {
+// 	if ( x < 0 || x > 5 || x.length == 0 || x != +x || pattern.test(x) ) {
 // 		alert('Put NATURAL number from 0 to 5');
 // 	}
 // 	if ( x == randomNumber ) {
