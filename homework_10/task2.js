@@ -39,7 +39,7 @@ function fighter(fighterItem) {
 	}
 	return {
 		getName: function() {
-			return fighter.name;
+			return fighterItem.name;
 		},
 		block: function() {
 			return Math.random() >= 0.5;
@@ -50,20 +50,6 @@ function fighter(fighterItem) {
 		getCombatHistory: function() {
 			return combatHistory;
 		},
-		// fight: function(enemy) {
-		// 	if( enemy.block()) {
-		// 		return false;
-		// 	} else {
-		// 		var demage = enemy.getStats().hp - power.attack;
-		// 		if( demage > 0 ) {
-		// 			enemy.getStats().hp = demage;
-		// 			enemy.combatHistory().loses--;
-		// 		} else {
-		// 			combatHistory.wins++;
-		// 			enemy.getStats().hp = 0;
-		// 		}
-		// 	}
-		// }
 		fight: function(enemy) {
       if (enemy.block()) {
           return false;
