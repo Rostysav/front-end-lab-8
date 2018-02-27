@@ -78,28 +78,16 @@ liFirstParag.addEventListener('click', function(){
 		this.classList.add('show');
 		this.insertBefore(secondFolder, firstFolder);
 		this.removeChild(firstFolder);
-		// fantasyEptyFolderParag.style.display = 'block';
-		// this.appendChild(openFolderImg.cloneNode(true));
 		fantasyListParag.style.display = 'block';
+		fantasyUl.style.display = 'block';
 	} else {
 		this.classList.add('parrent');
 		this.classList.remove('show');
 		this.insertBefore(firstFolder, secondFolder);
 		this.removeChild(secondFolder);
 		firstFilmParag.classList.remove('toggle');
-		// fantasyEptyFolderParag.style.display = 'none';
 		fantasyListParag.style.display = 'none';
-
-
-		fantasyListParag.insertBefore(fantasyCloseFolder, fantasyOpenFolder);
-		fantasyListParag.removeChild(fantasyOpenFolder);
-		fantasyMovieParag.classList.remove('toggle');
-		fantasyEptyFolderParag.style.display = 'none';
-
-
-		// fantasyEptyFolderParag.insertBefore(fantasyEptyFoldeClose, fantasyEptyFoldeOpen);
-		// fantasyEptyFolderParag.removeChild(fantasyEptyFoldeOpen);
-		fantasyEptyFolderText.classList.remove('italic');
+		fantasyUl.style.display = 'none';
 
 	}
 
@@ -136,11 +124,6 @@ fantasyListParag.addEventListener('click', function(){
 		this.removeChild(fantasyOpenFolder);
 		fantasyMovieParag.classList.remove('toggle');
 		fantasyEptyFolderParag.style.display = 'none';
-
-
-		fantasyEptyFolderParag.insertBefore(fantasyEptyFoldeClose, fantasyEptyFoldeOpen);
-		fantasyEptyFolderParag.removeChild(fantasyEptyFoldeOpen);
-		fantasyEptyFolderText.classList.remove('italic');
 	}
 })
 
@@ -179,10 +162,7 @@ fantasyEptyFolderParag.addEventListener('click', function(){
 		this.removeChild(fantasyEptyFoldeOpen);
 		fantasyEptyFolderText.classList.remove('italic');
 	}
-
-	
 });
-
 
 
 		/*Last item in ul*/
@@ -208,10 +188,6 @@ liLastParag.addEventListener('click', function(){
 		this.removeChild(documentOpenFolder);
 		epamFolderParag.classList.remove('show');
 		epamFolderParag.classList.remove('toggle');
-
-		epamFolderParag.insertBefore(epamCloseFolder, epamOpenFolder);
-		epamFolderParag.removeChild(epamOpenFolder);
-		epamFolderText.classList.remove('italic');
 	}
 });
 
@@ -223,7 +199,6 @@ epamFolder.appendChild(epamFolderParag);
 var epamCloseFolder = epamFolderParag.appendChild(closeFolderImg.cloneNode(true));
 epamFolderParag.appendChild(epamFolderName);
 var epamOpenFolder = openFolderImg.cloneNode(true);
-
 epamFolderParag.appendChild(epamFolderText);
 
 epamFolderParag.addEventListener('click', function(){
